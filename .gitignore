@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+# public keys
+power4_key
+power4_key.pub
+
 # Compiled Object files
 *.slo
 *.lo
