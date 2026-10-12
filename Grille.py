@@ -28,10 +28,23 @@ class Grille:
                 break
         if full : print("Colonne complete --> En choisir une autre")
 
+    #TODO
     def check(self):
         for elem in self.gril():
             pass
     
+    #TODO
+    def gril_status(self, column:int):
+        line = len(self.gril)
+        max_full = self.haut
+        for i in range(self.haut):
+            if self.gril[line-i-1][column] == 0:
+                if i==0:
+                    max_full = 0
+                else: 
+                    max_full = i
+        return max_full
+            
         
     ## GET & SET
     def get_nb_lines(self):
